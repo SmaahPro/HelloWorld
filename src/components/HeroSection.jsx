@@ -89,7 +89,7 @@ const HeroSection = () => {
                             className="flex items-center gap-2 px-6 py-3 border border-gray-700 hover:bg-gray-800 text-sm font-medium rounded-full transition-all text-gray-300"
                         >
                             <Download size={16} />
-                            Download CV
+                            Resume
                         </button>
                     </div>
                 </motion.div>
