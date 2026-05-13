@@ -67,7 +67,7 @@ const TechStack = () => {
     };
 
     return (
-        <section className="relative min-h-screen py-20 px-7 text-white bg-[#030014] overflow-hidden">
+        <section id="tech" className="relative min-h-screen py-17 px-7 text-white bg-[#030014] overflow-hidden">
 
             <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:60px_60px]" />
 

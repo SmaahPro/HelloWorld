@@ -6,11 +6,10 @@ import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
 import Project from "@/components/Project";
 import TechStack from "@/components/TechStack";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
+    <main className="mt-16">
       <Navbar />
       <HeroSection />
       <AboutMe />
@@ -19,6 +18,6 @@ export default function Home() {
       <EduQualification />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 }

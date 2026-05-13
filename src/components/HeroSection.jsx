@@ -19,9 +19,8 @@ const HeroSection = () => {
 
         return () => clearInterval(interval);
     }, []);
-
     return (
-        <section className="relative w-full lg:min-h-[90vh] min-h-screen bg-[#030712] text-white flex flex-col justify-center overflow-hidden py-10 md:py-0">
+        <section id="hero" className="relative w-full lg:min-h-[92vh] min-h-screen bg-[#030712] text-white flex flex-col justify-start pt-20 md:pt-28 overflow-hidden pb-10 md:pb-0">
 
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-[-10%] left-[-10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[120px]" />
@@ -46,7 +45,7 @@ const HeroSection = () => {
 
                         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                             Sheikh Muntaqim <br />
-                            <span className="text-gray-400">Ahmed Al Hasib</span>
+                            <span className="text-gray-300">Ahmed Al Hasib</span>
                         </h1>
                     </div>
 
@@ -83,14 +82,14 @@ const HeroSection = () => {
                         <button
                             onClick={() => {
                                 const link = document.createElement("a");
-                                link.href = "/SmaahPro.pdf";
-                                link.download = "SmaahPro.pdf";
+                                link.href = "/CV.pdf";
+                                link.download = "Sheikh Muntaqim Ahmed Al Hasib.pdf";
                                 link.click();
                             }}
                             className="flex items-center gap-2 px-6 py-3 border border-gray-700 hover:bg-gray-800 text-sm font-medium rounded-full transition-all text-gray-300"
                         >
                             <Download size={16} />
-                            CV
+                            Download CV
                         </button>
                     </div>
                 </motion.div>
