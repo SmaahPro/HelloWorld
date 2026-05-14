@@ -33,7 +33,7 @@ const Qualification = () => {
         },
     ];
 
-    const geometricShapes = [
+    const desktopGeometricShapes = [
         { type: "triangle", size: 60, top: "10%", left: "5%", delay: 0, duration: 20 },
         { type: "square", size: 40, top: "70%", left: "85%", delay: 2, duration: 18 },
         { type: "circle", size: 30, top: "85%", left: "10%", delay: 1, duration: 15 },
@@ -44,6 +44,15 @@ const Qualification = () => {
         { type: "square", size: 45, top: "90%", left: "20%", delay: 3.5, duration: 21 },
     ];
 
+    const mobileGeometricShapes = [
+        { type: "triangle", size: 30, top: "5%", left: "2%", delay: 0, duration: 15 },
+        { type: "circle", size: 20, top: "85%", left: "88%", delay: 1, duration: 12 },
+        { type: "square", size: 25, top: "15%", left: "90%", delay: 2, duration: 18 },
+        { type: "diamond", size: 20, top: "50%", left: "3%", delay: 1.5, duration: 14 },
+        { type: "circle", size: 15, top: "70%", left: "5%", delay: 2.5, duration: 16 },
+        { type: "triangle", size: 18, top: "30%", left: "92%", delay: 3, duration: 13 },
+    ];
+
     return (
         <section
             id="qualification"
@@ -51,7 +60,7 @@ const Qualification = () => {
         >
 
             <div className="hidden md:block">
-                {geometricShapes.map((shape, idx) => (
+                {desktopGeometricShapes.map((shape, idx) => (
                     <motion.div
                         key={idx}
                         className="absolute"
@@ -103,6 +112,56 @@ const Qualification = () => {
                 ))}
             </div>
 
+            <div className="md:hidden">
+                {mobileGeometricShapes.map((shape, idx) => (
+                    <motion.div
+                        key={idx}
+                        className="absolute opacity-40"
+                        style={{
+                            top: shape.top,
+                            left: shape.left,
+                            width: shape.size,
+                            height: shape.size,
+                        }}
+                        animate={{
+                            y: [0, -15, 0, 15, 0],
+                            x: [0, 10, 0, -10, 0],
+                            rotate: [0, 180],
+                        }}
+                        transition={{
+                            duration: shape.duration,
+                            delay: shape.delay,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                        }}
+                    >
+                        {shape.type === "triangle" && (
+                            <div className="w-full h-full">
+                                <div
+                                    className="border-l-transparent border-r-transparent border-b-purple-500/30"
+                                    style={{
+                                        width: 0,
+                                        height: 0,
+                                        borderLeftWidth: shape.size / 2,
+                                        borderRightWidth: shape.size / 2,
+                                        borderBottomWidth: shape.size
+                                    }}
+                                />
+                            </div>
+                        )}
+                        {shape.type === "square" && (
+                            <div className="w-full h-full border border-purple-500/30 rotate-12" />
+                        )}
+                        {shape.type === "circle" && (
+                            <div className="w-full h-full rounded-full border border-purple-500/30" />
+                        )}
+                        {shape.type === "diamond" && (
+                            <div className="w-full h-full border border-purple-500/30 rotate-45" />
+                        )}
+                    </motion.div>
+                ))}
+            </div>
+
             <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600/20 blur-[130px] rounded-full" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[35%] h-[35%] bg-blue-600/10 blur-[130px] rounded-full" />
 
@@ -116,7 +175,7 @@ const Qualification = () => {
                     viewport={{ once: true }}
                     className="text-center mb-8 md:mb-10"
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold">
+                    <h2 className="text-gray-200 text-3xl md:text-5xl font-extrabold">
                         Qualification
                     </h2>
                     <p className="text-gray-400 text-xs md:text-sm mt-2">

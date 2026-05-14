@@ -82,7 +82,7 @@ const HeroSection = () => {
                         <button
                             onClick={() => {
                                 const link = document.createElement("a");
-                                link.href = "/CV.pdf";
+                                link.href = "/Sheikh Muntaqim Ahmed Al Hasib.pdf";
                                 link.download = "Sheikh Muntaqim Ahmed Al Hasib.pdf";
                                 link.click();
                             }}
