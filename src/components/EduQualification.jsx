@@ -96,9 +96,10 @@ const Qualification = () => {
                 ))}
             </div>
 
-            <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600/20 blur-[130px] rounded-full" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-[35%] h-[35%] bg-blue-600/10 blur-[130px] rounded-full" />
-            <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:55px_55px]" />
+            <div className="absolute inset-0 z-0">
+                <div className="absolute top-[-10%] left-[-10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-cyan-500/10 rounded-full blur-[120px]" />
+            </div>
 
             <div className="relative max-w-5xl mx-auto w-full px-5 md:px-8 py-6 md:py-10">
                 <motion.div

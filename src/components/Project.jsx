@@ -13,6 +13,7 @@ import { FaGithub } from "react-icons/fa6";
 
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
+import project3 from "@/assets/project3.png";
 
 
 const allProjects = [
@@ -33,12 +34,12 @@ const allProjects = [
         github: "https://github.com/SmaahPro/Assignment-7",
     },
     {
-        title: "QurbaniHat",
-        description: "QurbaniHat is a modern web application designed to help users easily discover and book healthy cows, goats, sheep, and other livestock for Qurbani(Eid-ul-Adha sacrifice). The platform connects buyers with trusted and verified sellers across Bangladesh, making the process of finding the right animal simple, secure, and convenient for the holy occasion.",
-        image: project1,
-        tech: ["Next.js", "BetterAuth", "MongoDB"],
-        live: "https://smaahqurbanihat.vercel.app",
-        github: "https://github.com/SmaahPro/Assignment-8",
+        title: "DigiTools – Premium Digital Tools Platform",
+        description: "A web application to explore, buy, and manage premium digital tools efficiently. Designed with React and Tailwind CSS, it provides a smooth, responsive experience across devices with interactive cart functionality and real-time alerts.",
+        image: project3,
+        tech: ["React", "TailwindCSS", "DaisyUI", "JavaScript"],
+        live: "https://smaahdigitoolsplatform.netlify.app",
+        github: "https://github.com/SmaahPro/Assignment-6",
     },
     {
         title: "KeenKeeper",
@@ -122,21 +123,20 @@ const Projects = () => {
             className="relative w-full bg-[#030014] text-white overflow-hidden py-10 md:py-0"
         >
 
-            <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600/20 blur-[140px] rounded-full" />
-
-            <div className="absolute bottom-[-10%] right-[-10%] w-[35%] h-[35%] bg-blue-600/10 blur-[140px] rounded-full" />
-
-            <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:60px_60px]" />
+            <div className="absolute inset-0 z-0">
+                <div className="absolute top-[-10%] left-[-10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-cyan-500/10 rounded-full blur-[120px]" />
+            </div>
 
             <div className="relative max-w-6xl mx-auto px-4 md:px-6 w-full pt-12 md:pt-8 pb-16 md:pb-20">
 
                 <div className="text-center mb-6 md:mb-7">
 
-                    <h2 className="text-3xl md:text-5xl font-extrabold">
+                    <h2 className="text-gray-200 text-3xl md:text-5xl font-extrabold">
                         Projects
                     </h2>
 
-                    <p className="text-gray-400 text-xs md:text-sm mt-2">
+                    <p className="text-gray-400 text-xs md:text-sm mt-2 mb-10">
                         Some of my featured works & creative developments
                     </p>
 

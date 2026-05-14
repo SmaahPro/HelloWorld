@@ -21,7 +21,10 @@ const Footer = () => {
     return (
         <footer className="relative w-full bg-[#030014] py-8 overflow-hidden">
 
-            <div className="absolute top-0 right-[-10%] w-[400px] h-[400px] bg-blue-600/15 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute inset-0 z-0">
+                <div className="absolute top-[-10%] left-[-10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-cyan-500/10 rounded-full blur-[120px]" />
+            </div>
 
             <div className="max-w-6xl mx-auto px-6 relative z-10">
                 <motion.div

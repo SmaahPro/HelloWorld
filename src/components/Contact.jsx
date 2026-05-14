@@ -16,11 +16,12 @@ const Contact = () => {
         <section id="contact" className="relative w-full min-h-[77vh] md:h-[77vh] bg-[#030014] text-white overflow-hidden flex items-center py-12 md:py-0">
             <div className="absolute top-20 left-10 w-40 h-40 border border-purple-500/10 rotate-45 rounded-3xl blur-[1px]" />
             <div className="absolute bottom-20 right-16 w-52 h-52 border border-blue-500/10 rounded-full" />
-            <div className="absolute top-1/2 left-[20%] w-3 h-3 bg-purple-500/40 rotate-45" />
-            <div className="absolute top-[18%] right-[22%] w-5 h-5 border border-cyan-400/30 rounded-full" />
-            <div className="absolute bottom-[18%] left-[30%] w-24 h-24 border border-white/5 rotate-12 rounded-2xl" />
-            <div className="absolute top-[35%] right-[10%] w-2 h-24 bg-gradient-to-b from-purple-500/20 to-transparent rotate-12" />
-            <div className="absolute inset-0 opacity-[0.02] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:55px_55px]" />
+
+            <div className="absolute inset-0 z-0">
+                <div className="absolute top-[-10%] left-[-10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-cyan-500/10 rounded-full blur-[120px]" />
+            </div>
+
             <div className="relative max-w-6xl mx-auto px-4 md:px-6 w-full">
                 <div className="text-center mb-8 md:mb-10">
                     <h2 className="text-gray-200 text-3xl md:text-5xl font-extrabold">Lets Connect</h2>

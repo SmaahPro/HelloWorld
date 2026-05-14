@@ -51,12 +51,12 @@ const TechStack = () => {
             className="relative w-full min-h-[90vh] flex items-center bg-[#030014] text-white overflow-hidden"
         >
 
-            <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#fff_1px,transparent_1px),linear-gradient(to_bottom,#fff_1px,transparent_1px)] bg-[size:60px_60px]" />
+            <div className="absolute inset-0 z-0">
+                <div className="absolute top-[-10%] left-[-10%] w-[30%] h-[30%] bg-blue-600/10 rounded-full blur-[120px]" />
+                <div className="absolute bottom-[-10%] right-[-10%] w-[30%] h-[30%] bg-cyan-500/10 rounded-full blur-[120px]" />
+            </div>
 
-            <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-600/20 blur-[140px] rounded-full" />
-            <div className="absolute bottom-[-10%] right-[-10%] w-[35%] h-[35%] bg-blue-600/10 blur-[140px] rounded-full" />
-
-            <div className="relative w-full max-w-6xl mx-auto px-4 md:px-7 pt-10 pb-12">
+            <div className="relative w-full max-w-6xl mx-auto px-4 md:px-7 pt-10 pb-12 z-10">
 
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
