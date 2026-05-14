@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, Mail } from "lucide-react";
-import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 
 const titles = ["Web Developer", "AI Enthusiast", "Problem Solver"];
 
@@ -133,6 +133,9 @@ const HeroSection = () => {
 
                 <a href="https://instagram.com/SmaahPro" target="_blank" rel="noopener noreferrer">
                     <FaInstagram className="hover:text-pink-500 cursor-pointer transition-colors text-xl" />
+                </a>
+                <a href="https://wa.me/8801234567890" target="_blank" className="text-gray-400 hover:text-green-500 transition text-lg md:text-xl">
+                    <FaWhatsapp />
                 </a>
             </motion.div>
 

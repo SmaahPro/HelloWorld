@@ -19,10 +19,11 @@ const Footer = () => {
     };
 
     return (
-        <footer className="relative w-full bg-gradient-to-b from-[#030014] to-[#1a0033] py-6 md:py-8 overflow-hidden">
+        <footer className="relative w-full bg-[#030014] py-8 overflow-hidden">
 
-            <div className="relative max-w-6xl mx-auto px-6 md:px-20">
+            <div className="absolute top-0 right-[-10%] w-[400px] h-[400px] bg-blue-600/15 blur-[120px] rounded-full pointer-events-none" />
 
+            <div className="max-w-6xl mx-auto px-6 relative z-10">
                 <motion.div
                     variants={textVariants}
                     initial="hidden"
@@ -30,46 +31,16 @@ const Footer = () => {
                     viewport={{ once: true }}
                     className="flex flex-col items-center justify-center text-center"
                 >
-                    <p className="text-purple-200 text-xs md:text-sm font-medium tracking-wide">
+                    <p className="text-gray-400 text-xs md:text-sm font-medium tracking-wide">
                         <motion.span
-                            initial={{ opacity: 0, x: -10 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
-                            transition={{ delay: 0.1, duration: 0.4 }}
-                            className="inline-block"
+                            className="text-purple-400"
                         >
                             ©
                         </motion.span>
-
-                        <motion.span
-                            initial={{ opacity: 0, x: -5 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.2, duration: 0.4 }}
-                            className="inline-block ml-1"
-                        >
-                            {" "}{currentYear}
-                        </motion.span>
-
-                        <motion.span
-                            initial={{ opacity: 0, x: -5 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.3, duration: 0.4 }}
-                            className="inline-block ml-1"
-                        >
-                            {" "}Sheikh Muntaqim Ahmed Al Hasib.
-                        </motion.span>
-
-                        <motion.span
-                            initial={{ opacity: 0, x: -5 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.5, duration: 0.4 }}
-                            className="inline-block ml-1"
-                        >
-                            {" "}All Rights Reserved.
-                        </motion.span>
+                        {" "}{currentYear} Sheikh Muntaqim Ahmed Al Hasib. All Rights Reserved.
                     </p>
                 </motion.div>
             </div>
