@@ -11,7 +11,7 @@ const navLinks = [
     { name: "About", id: "about", icon: User },
     { name: "Technologies", id: "tech", icon: Code },
     { name: "Projects", id: "projects", icon: FolderGit2 },
-    { name: "Qualifications", id: "qualifications", icon: GraduationCap },
+    { name: "Qualification", id: "qualification", icon: GraduationCap },
     { name: "Contact", id: "contact", icon: Mail },
 ];
 

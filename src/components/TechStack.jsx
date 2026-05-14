@@ -64,7 +64,7 @@ const TechStack = () => {
                     viewport={{ once: true }}
                     className="text-center mb-10 md:mb-12"
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold">
+                    <h2 className="text-gray-200 text-3xl md:text-5xl font-extrabold">
                         Technologies
                     </h2>
 
